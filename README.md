@@ -1,2 +1,2 @@
 # Estrutura-de-Dados
-repositorio de exercicios e algoritimos. 
+repositorio de algoritmos e exercicios. 
