@@ -1,6 +1,7 @@
-package exercicios06e07;
+package tipos.estruturados.rbbr;
 
 public class Stack {
+
 	private Object item[];
 	private int top;
 	
@@ -10,7 +11,7 @@ public class Stack {
 		
 			
 	}
-	public void empilha (Object elemento) throws Exception {
+	public void empilhar (Object elemento) throws Exception {
 		
 		if(this.top == this.item.length){
 			throw new Exception ("Erro: A pilha ta cheia");
@@ -29,6 +30,16 @@ public class Stack {
 			
 			
 	}
+	public int buscaElemento(Object elemento){
+		for(int i=0; i<this.tam();i++){
+			if (this.item[i].equals(elemento)){
+				return i;
+		}
+				
+		}
+					return -1;
+		}
+
 		
 	public boolean empty(){
 		return (this.top == 0);
@@ -40,20 +51,4 @@ public class Stack {
 		
 	}
 	
-	public Object pesquisar(Object x) throws Exception{
-		if(this.empty()){
-			throw new Exception("Erro: A pilha esta vazia");
-		}
-		for(int i=0;i<tam();i++){
-			if(this.item[i]==x){
-				System.out.println("elemento encontrado");
-			}
-			
-			
-		}
-				
-		
-				return item;
-	}
-		
 }
