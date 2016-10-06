@@ -10,8 +10,8 @@ public class MinhaPilha {
 	private Celula topo;
 	private int tam;
 		public Pilhas (){
-			this.topo=null;
-				this.tam=0;
+		this.topo=null;
+		this.tam=0;
 		
 		
 	}
