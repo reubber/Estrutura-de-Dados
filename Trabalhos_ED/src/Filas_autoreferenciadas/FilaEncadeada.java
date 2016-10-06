@@ -48,17 +48,7 @@ public class FilaEncadeada {
 				return i-1;
 		}
 
-	public Object buscar(int elemento){
-			Celula aux = frente;
-
-			if((vazia() != true) &&  (elemento > tamanho())){
-				for(int i = -1; (aux != null) && (i < elemento); i++){
-					aux = aux.getProx();
-		}
-				return aux.getValor();					
-		}
-				return null;		
-		}
+	
 
 	public void imprima() {
 				Celula aux = frente;
