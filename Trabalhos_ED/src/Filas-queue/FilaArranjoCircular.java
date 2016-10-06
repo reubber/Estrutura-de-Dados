@@ -9,12 +9,13 @@ public class FilaArranjoCircular {
 		this.itens = new Object[maxTam];
 		this.frente = 0;
 		this.tras = this.frente;
+		this.tam = maxTam;
 		
 	}
 	
 	public FilaArranjoCircular(){
 		this.itens = new Object[8];
-		this.tam = 8;
+	
 	}
 	
 	public void enfilerar (Object elemento){
